@@ -1,0 +1,79 @@
+<h1 id="常用工具">常用工具</h1>
+
+<p>使用方式较简单的会直接写在这个页面内，其他较复杂的会写在单独的页面。</p>
+
+<h2 id="jdk">JDK​</h2>
+
+<h3 id="安裝-jdk">安裝 JDK​</h3>
+
+<p>下载地址：</p>
+
+<p><code class="language-plaintext highlighter-rouge">[`https://www.oracle.com/java/technologies/downloads/`](https://www.oracle.com/java/technologies/downloads/)</code></p>
+
+<p>根据自己的系统下载并安装一个适合的版本即可，我安装用的是 x64 MSI Installer 一并安装 JRE。</p>
+
+<h3 id="环境配置">环境配置</h3>
+
+<p>依次点击【控制面板》系统和安全》系统》高级系统设置》环境变量】打開環境配置彈窗**<code class="language-plaintext highlighter-rouge">新增</code>**以下系统变量。</p>
+
+<blockquote>
+  <p>变量名：</p>
+
+  <p>CLASSPATH</p>
+
+  <p>变量值：</p>
+
+  <p>.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;%JMETER_HOME%\lib\ext\ApacheJMeter_core.jar; %JMETER_HOME%\lib\jorphan.jar;</p>
+</blockquote>
+
+<blockquote>
+  <p>变量名：</p>
+
+  <p>JAVA_HOME</p>
+
+  <p>变量值：</p>
+
+  <p>安装 JDK 的目录</p>
+</blockquote>
+
+<p>**<code class="language-plaintext highlighter-rouge">编辑</code>**系统变量 path，依次新增以下内容。</p>
+
+<blockquote>
+  <p>%JAVA_HOME%\bin</p>
+
+  <p>%JAVA_HOME%\jre\bin</p>
+</blockquote>
+
+<h2 id="jmeter">JMeter</h2>
+
+<p>写这篇时最新的版本是 Apache JMeter 5.4.3 (Requires Java 8+)，如果沒有 Java 环境需先安装 JDK。</p>
+
+<h3 id="安装-jmeter">安装 JMeter</h3>
+
+<p>我下载的是 apache-jmeter-5.4.3_src.tgz，解壓到目標路徑後就可以使用了。</p>
+
+<h3 id="环境配置-1">环境配置</h3>
+
+<p>依次点击【控制面板》系统和安全》系统》高级系统设置》环境变量】打開環境配置彈窗**<code class="language-plaintext highlighter-rouge">新增</code>**以下系统变量。</p>
+
+<blockquote>
+  <p>​变量名：</p>
+
+  <p>JMETER_HOME</p>
+
+  <p>变量值：</p>
+
+  <p>安装 JMeter 的目录</p>
+</blockquote>
+
+<p>**<code class="language-plaintext highlighter-rouge">编辑</code>**系统变量 path，新增以下内容。</p>
+
+<blockquote>
+  <p>%JMETER_HOME%\bin</p>
+</blockquote>
+
+<h3 id="启动">启动</h3>
+
+<p>在 CMD 输入 jmeter 即可启动。启动后发现有一些控件无法使用，尝试切换主题发现 Darklaf 系列主题下都有这个问题，切换到普通主题就可以了。</p>
+
+
