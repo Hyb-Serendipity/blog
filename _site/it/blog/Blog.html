@@ -1,0 +1,37 @@
+<h1 id="搭建博客">搭建博客</h1>
+<p>博客使用 GitHub Pages 搭建，准备一些工具。</p>
+<h2 id="ruby">Ruby</h2>
+<h3 id="安装-ruby">安装 Ruby</h3>
+<p>下载地址：
+<a href="https://rubyinstaller.org/downloads/"><code class="language-plaintext highlighter-rouge">https://rubyinstaller.org/downloads/</code></a>
+根据自己的系统下载并安装一个适合的版本即可，macOS 有自带的需要再次安装。</p>
+<h3 id="启动">启动</h3>
+<p>在 CMD 输入 ruby 即可启动。</p>
+<h3 id="安装-gem">安装 Gem</h3>
+<p>在 Ruby 下执行以下命令更新到最新版 Gem。</p>
+<blockquote>
+  <p>gem update –system</p>
+  <h3 id="安裝-jekyll">安裝 Jekyll</h3>
+  <p>在 Ruby 下执行以下命令更新到最新版 jekyll。
+gem install jekyll</p>
+  <h2 id="搭建博客-1">搭建博客</h2>
+  <h3 id="创建目录">创建目录</h3>
+  <p>jekyll new 文件名</p>
+  <h3 id="打开目录">打开目录</h3>
+  <p>cd 文件名</p>
+  <h3 id="安装必要插件不安装无法进行下一步">安装必要插件（不安装无法进行下一步）</h3>
+  <p>bundle add webrick
+执行命令
+jekyll serve</p>
+</blockquote>
+
+<blockquote>
+  <p>gem install bundler:2.1.4</p>
+</blockquote>
+
+<p>完成后浏览器打开 http://127.0.0.1:4000/ 即可查看。</p>
+<h3 id="發佈文章">發佈文章</h3>
+<p>在 _post 目录下添加 markdown 文件即可，其中 md 的文件名需设置为 “yyyy-mm-dd-标题.md” 且日期要不晚于当前系统时间。</p>
+<h3 id="创建主题">创建主题</h3>
+<p>jekyll new-theme 主题名</p>
+
